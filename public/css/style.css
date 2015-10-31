@@ -1,0 +1,429 @@
+/*
+===
+===
+green: 	#27b399
+light: 	#f2f3f5
+dark:	#2b3339
++ dark:	#0f1c26
+===
+===
+*/
+
+
+/* Scrollbar */
+::-webkit-scrollbar { /* espessura da barra de rolagem */
+	width: 10px;
+}
+::-webkit-scrollbar-track { /* espaco fora da barra de rolagem */
+	background-color: #777;
+}
+::-webkit-scrollbar-thumb { /* a barra de rolagem em si */
+	background-color: #27b399;
+}
+::-webkit-scrollbar-thumb:hover { /* hover da barra de rolagem em si */
+	background-color: #0f1c26;
+}
+/* Fim Scrollbar */
+
+/*
+=====
+=====
+BOOTSTRAP
+=====
+=====
+*/
+
+/* Common */
+.container-fluid {
+	padding: 0;/*para o slideshow não ficar com espaço nas laterais*/
+}
+.row { /* Bugzinho que acaba aparecendo um pequeno scroll horizontal */
+	/* margin-left: 0; */
+	margin-right: 0;
+}
+.breadcrumb {
+	background-color: #f2f3f5;
+	border-radius: 0;
+	padding-left: 0;
+}
+input[type='submit']:hover, .btn-default:hover {
+	background: #27b399;
+	color: #fff;
+}
+/* Fim Common */
+
+/* Menu */
+.navbar-brand {
+	padding-left: 0;
+}
+
+.navbar {
+	margin-bottom: 0; /* deixar slideshow junto com o menu */
+	border-radius: 0;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #2b3339;
+	padding: 20px 25px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #27b399;
+}
+.navbar-form {
+	margin-top: -6px;
+	margin-bottom: 5px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+/* Dropwdown */
+.navbar-default {
+	/*padding: 9px;*/
+	background-color: #f2f3f5;
+}
+.navbar-nav { /* Acertar o dropdown do menu para aparecer depois da nav */
+	padding-top: 6px;
+}
+.dropdown-menu {
+	background-color: #f2f3f5;
+}
+.dropdown-menu> li > a {
+	color: #2b3339;
+}
+.dropdown-menu> li > a:hover {
+	color: #27b399;
+}
+.pdMenu {
+	padding: 9px;
+}
+/* Fim Dropdown */
+/* Fim Menu */
+
+/* Slideshow */
+/*  Estender as imgs do slideshow por toda a largura */
+.carousel {
+	margin-bottom: 5vw;
+}
+.carousel-indicators li {
+	width: 15px;
+	height: 15px;
+	border: 2px solid #27b399;
+	border-radius: 0;
+}
+.carousel-indicators .active {
+	width: 17px;
+	height: 17px;
+	background-color: #27b399;
+}
+.item img {
+	width: 100%;
+}
+/* Fim Slideshow */
+/* FIM BOOTSTRAP */
+
+
+/*  New Classes */
+html {
+	position: relative; /* se eu não colocar, o footer já aparece colado embaixo, mesmo se a pagina scrollar */
+	min-height: 100%;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 330px; /*se eu não colocar, o footer já aparece colado embaixo, mesmo se a pagina scrollar */
+}
+/* Heading */
+h2 {
+	margin: 5px;
+}
+h3 {
+	margin: auto auto 2% auto;
+}
+/* Fim Heading*/
+a {
+	color: #2b3339;
+}
+a:hover {
+	color: #27b399;
+}
+ul {
+	padding-left: 0;
+}
+li {
+	font-weight: 700;
+}
+header {
+	background-color: #2b3339;
+}
+footer {
+	/* deixar o footer na parte de baixo */
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 330px; /* se eu não colocar, o footer já aparece colado embaixo, mesmo se a pagina scrollar */
+}
+textarea {
+	resize: none;
+}
+
+/*    MAIN COLORS  */
+.color-green {
+	color: #27b399;
+}
+.color-dark {
+	color: #2b3339;
+}
+.color-light {
+	color: #f2f3f5;
+}
+/*    MAIN BG COLORS  */
+.bg-green {
+	background-color: #27b399;
+}
+.bg-dark {
+	background-color: #2b3339;
+}
+.bg-light {
+	background-color: #f2f3f5;
+}
+
+/*  OTHER CLASSES   */
+.border-green {
+	border-color: #27b399;
+}
+/* Header */
+.top-header {
+	padding-top: 10px;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #f2f3f5;
+	background-color: #2b3339;
+}
+.img-logo {
+	height: 70px;
+	margin-top: -23px;/*centralizar a logo na div*/
+}
+.in-btn-dark { /* Para deixar botão, input com a borda verde e sem fundo */
+	color: #f2f3f5;
+	background-color: transparent;
+	border-color: #27b399;
+}
+.mar-shop { /* Consertar margem superior do carrinho e icon*/
+	margin-top: -6px;
+}
+/* Fim Header */
+
+/* Home */
+.hrSide { /* Linha Horizontal entre o h3 */
+	width: 50px;
+	height: 2px;
+	background-color: #27b399;
+}
+#destaque li > a {
+	color: #2b3339;
+}
+/* Fim Home */
+
+/* Footer */
+#information {
+	margin-top: 25px;
+	padding: 25px 0 0;
+	background-color: #2b3339;
+}
+#information a {
+	font-weight: 300;
+}
+#information li {
+	padding: 10px 0;
+}
+.decoration { /* Tirar estilo de link no footer */
+	list-style: none;
+}
+#copyright {
+	margin-top: 50px;
+	padding: 15px 0 5px 0;
+	background-color: #0f1c26;
+}
+/* Fim Footer */
+
+.verticalMargin { /* Colocoar margin abaixo dos titulos das sections  */
+	margin-bottom: 4vw;
+}
+.acertaBreadcrumb {
+	height: 36px;
+	margin-bottom: 20px;
+}
+.verticalMarginModal { /* Descolar esqueci a senha do botão de enviar */
+	margin-bottom: 1vw;
+}
+.noBG {/*Caso queira tirar o BG de algum elemento*/
+	background: transparent;
+}
+
+/* Cosnertar bug do padding do modal */
+body.modal-open-noscroll
+{
+	margin-right: 0!important;
+	overflow: hidden;
+}
+.modal-open-noscroll .navbar-default, .modal-open .navbar-default
+{
+	margin-right: 0!important;
+}
+
+.tiraPdLeft { /* tirar padding-left da imagem no Quem Somos */
+	padding-left: 0;
+}
+/* Fim bug do modal */
+
+/*
+=====
+=====
+ADMIN
+=====
+=====
+*/
+
+/*BOOTSTRAP*/
+/*.btn-success {*/
+	/*border-radius: 0;*/
+	/*background-color: #27b399;*/
+/*}*/
+.btn-primary {
+	background-color: #27b399;
+	border: none;
+	border-radius: 0;
+}
+.btn-primary:hover,
+input[type=submit]:hover {
+	background-color: #27b399;
+}
+.btn-info {
+	background-color: #2b3339;
+	border: none;
+	border-radius: 0;
+}
+.btn-info:hover {
+	background-color: #27b399;
+}
+
+/*CRIADAS*/
+.admin-box {
+	padding: 15px 0;
+	margin: 0;
+	color: #f2f3f5;
+	background-color: #2b3339;
+}
+/*deixar o h3 da pagina admin alinhada com as caixas*/
+.pdHeading {
+	padding-left: 15px;
+}
+.navbar-collapse {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.nav-pills>li.active>a {
+	background-color: #27b399;
+}
+
+.noPadding { /*padding top da navbar-nav*/
+	padding-top: 0;
+}
+
+
+/* Sortable tables */
+table.sortable thead {
+	background-color:#eee;
+	color:#666666;
+	font-weight: bold;
+	cursor: default;
+}
+
+
+/*
+=====
+=====
+CADASTRO E CONTATO
+=====
+=====
+*/
+.error {/* mensagem de validacoa do form de contato e cadastro*/
+	color: #EB5055;
+	margin: 0;
+	font-size: 12px;
+}
+.form-group {/* para nao diexar muito distante de outro input devido a msg de validacao */
+	margin-bottom: 10px;
+}
+.widthForm { /*deixar o select de Estado do tamanho correto*/
+	width: 50%;
+}
+
+/*
+=====
+=====
+LISTAGEM DE PRODUTOS
+=====
+=====
+*/
+.pagination > .active > span { /* mudar pagina ativa do pagination */
+	background-color: #27b399;
+	border: 0;
+}
+.pagination > .active > span:hover {
+	background-color: #27b399;
+}
+.pagination> li > a {
+	color: #2b3339;
+}
+/*deixar todos os textos com a mesma altura*/
+.tamProduct {
+	height: 7vw;
+}
+
+.tamDescricao {
+	width: 10%;
+}
+
+@media (max-width: 768px) {
+	.cart {/*ajustar carrinho que tava muito em cima com a quebra*/
+		padding-top: 11px;
+	}
+	.navbar-form .form-control {
+		width: 100%;/*input busca responsivo*/
+	}
+}
+
+@media(max-width:1200px){
+
+	.formBreak {
+		float: left; /*botao nao ficar embaixo*/
+	}
+}
+/*padding do menu se acertar e nao quebrar cedo*/
+@media(min-width:768px) and (max-width:1200px){
+	.navbar-default .navbar-nav > li > a {
+		padding: 20px 10px;
+	}
+	.navbar-form .form-control {
+		width: 70%;/*input busca responsivo*/
+	}
+}
+
+/*devido a quebra mais cedo, tive que adiconar o overflow para parar de aparecer o scroll*/
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+	overflow: inherit;
+}
+/*Menu dar collapse antes. Tava quebrnado o menu e ficando horroroso*/
+@media screen and (max-width: 1000px) {
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+	.navbar-collapse.collapse.in {
+		display: block !important;
+	}
+	.navbar-header .collapse, .navbar-toggle {
+		display:block !important;
+	}
+	.navbar-header {
+		float:none;
+	}
+}
